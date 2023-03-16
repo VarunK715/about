@@ -52,7 +52,7 @@ nav {
 
 body {
   font-family: "Times New Roman", Times, serif;
-  background-image: url("/images/bgc.jpg");
+  background-image: url("images/bgc.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
