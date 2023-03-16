@@ -1,1 +1,259 @@
+<!DOCTYPE html lang="en-US">
 
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="\css_files\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .bdy {
+            opacity: 0.9;
+        }
+
+        .abt::after {
+            content: "";
+            width: 120px;
+            height: 1px;
+            display: inline-block;
+            background: #4ceb95;
+            margin: 0px 8px;
+
+        }
+
+
+        .edu::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: 8%;
+            top: 37.3%;
+            background: #3d02ff;
+            border: 2px solid #ffffff;
+        }
+
+        .edu1::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: 8%;
+            top: 73%;
+            background: #4603ff;
+            border: 2px solid #ffffff;
+        }
+
+        .mr {
+            margin-left: -25px;
+        }
+
+        .edw {
+            margin-left: -25px;
+
+        }
+
+        .intr {
+            margin-left: -22px;
+        }
+
+        .edc {
+            border-left: 3px solid rgb(255, 255, 255);
+            height: 570px;
+            position: absolute;
+            left: 8.6%;
+            margin-left: -3px;
+            top: 39.5%;
+        }
+
+        .wrk {
+            border-left: 3px solid rgb(241, 240, 244);
+            height: 300px;
+            position: absolute;
+            left: 52.1%;
+            margin-left: -3px;
+            top: 38.5%;
+        }
+
+        .wrk1::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: 51.5%;
+            top: 36.5%;
+            background: #4603ff;
+            border: 2px solid #ffffff;
+        }
+
+        .int1::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: 51.5%;
+            top: 86.5%;
+            background: #4603ff;
+            border: 2px solid #ffffff;
+        }
+
+        .int {
+            border-left: 3px solid rgb(253, 253, 255);
+            height: 240px;
+            position: absolute;
+            left: 52.1%;
+            margin-left: -3px;
+            top: 89%;
+        }
+
+
+        @media (max-width:1000px)  {
+            .edu::before {
+                display: none;
+            }
+
+            .edu1::before {
+                display: none;
+            }
+
+            .edc {
+                display: none;
+            }
+
+            .wrk1::before {
+                display: none;
+            }
+
+            .wrk {
+                display: none;
+            }
+
+            .int1::before {
+                display: none;
+            }
+
+            .int {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="\html_files\index.html" class="brand">Varun K</a>
+                <ul class="nav-links">
+                    <li><a title="Home" href="\html_files\index.html">Home</a></li>
+                    <li><a title="Movies" href="\html_files\about.html">About</a></li>
+                    <li><a title="Actors" href="\html_files\resume.html">Resume</a></li>
+                    <li><a title="News" href="\html_files\contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container bdy  mt-2 bg-dark">
+        <div class="container mt-3 p-2  text-white">
+            <h2 class="abt fst-italic fw-bolder">RESUME</h2>
+        </div>
+        <div class="container text-white">
+            <h4 style="color:rgb(255, 255, 255);">Varun K</h4>
+            <h6 class="mx-4">Currently working as Support Executive at Tata Consultancy Service Ltd.</h6>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 px-5 py-2 text-white ">
+                <div class="edc"> </div>
+                <h4 class="mt-2 mr edu" style="color:rgb(243, 255, 5);">Education</h4>
+
+                <h5 style="color:rgb(4, 255, 84);">St.Joseph Engineering College</h5>
+                <h6> <button type="#" class="btn btn-sm btn-light fw-bolder">2017-2020</button></h6>
+                <span><em>Graduated | BE, &nbsp;Computer Science</em></span><br>
+                <ul>
+                    <li class="lh-lg">Programming languages such as Java, Python.</li>
+                    <li class="lh-lg text-justify "> Learned about machine learning algorithms, other applications of
+                        AI, and the fundamentals
+                        of
+                        cybersecurity, including network security, cryptography, and ethical hacking.</li>
+                    <li class="lh-lg">Basics of cloud computing and different types of service model & provider</li>
+                </ul>
+
+
+                <h5 class="edu1" style="color:rgb(4, 255, 84);">Karnataka Polytechnic (Govt.) Mangalore</h5>
+                <h6> <button type="#" class="btn btn-sm btn-light fw-bolder">2014-2017</button></h6>
+                <span><em>Computer Science</em></span><br>
+                <ul>
+                    <li class="lh-lg">Programming languages such as Java,C,C++.</li>
+                    <li class="lh-lg text-justify ">Database management systems, including the design of database
+                        systems, data models, query
+                        languages, and data normalization.</li>
+                    <li class="lh-lg">Networking including network architectures, protocols, and network security.</li>
+                    <li class="lh-lg">Web development technologies including HTML, CSS, JavaScript and database
+                        connection.</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 px-5 py-3 work text-white ">
+                <div class="wrk"> </div>
+                <h5 class=" edw" style="color:rgb(213, 255, 4);">Work Experience</h5>
+
+                <h6 class="wrk1" style="color:rgb(4, 255, 84);">Tata Consulatncy Service Ltd. | <button type="#"
+                        class="btn btn-sm btn-light fw-bolder">April 2021 - Present</button>
+                </h6>
+
+                <ul>
+                    <li class="lh-lg">Working in SAP CPQ Functionality to solve user's queries, tickets with Incident
+                        Management and
+                        creation of cloud quotes.</li>
+                    <li class="lh-lg">Possess commanding language of programming language such as Python and
+                        construction of CTX tags
+                        and use of developer console tools.</li>
+                    <li class="lh-lg">CPQ functionalities using Global scripts, custom tables, Triggers, Quote
+                        calculations, etc</li>
+                    <li class="lh-lg">Have Monitoring experience of jobs running on Talend Jobs platform and on cloud
+                        services, also
+                        running SQL queries to analyse data movement from end-to-end system.</li>
+                </ul>
+
+                <div class="int"> </div>
+                <h5 class="intr" style="color:rgb(209, 255, 4);">Internship</h5>
+                <h6 class="int1" style="color:rgb(4, 255, 84);">FullStack Development | <button type="#"
+                        class="btn btn-sm btn-light fw-bolder">June 2019 - July 2019</button></h6>
+                <ul>
+                    <li class="lh-lg">Learned how to work with various web technologies, including HTML, CSS,
+                        JavaScript, and web
+                        frameworks like Bootstrap, Angular. </li>
+                    <li class="lh-lg">how to build and manage databases using SQL and NoSQL database systems, and how to
+                        work with
+                        server-side programming languages like Python.</li>
+                    <li class="lh-lg"> learned how to write clean, maintainable code, and how to use version control
+                        tools like Git to
+                        manage code changes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 ">
+        <h1></h1>
+    </div>
+    <!--Footer 
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com/Bull275?t=u047IZ46fMzMB17JLCnyzA&s=08"><i class="fab fa-twitter"
+                    style="color:rgb(19, 129, 232);"></i></a>
+            <a href="https://www.gmail.com"><i class="fa fa-envelope" style="color:rgb(241, 26, 26);"></i></a>
+            <a
+                href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B78y4asByQ6q%2FXx0fNn3A9w%3D%3D"><i
+                    class="fab fa-linkedin-in" style="color:rgb(19, 15, 208);"></i></a>
+        </div>
+        <p>&copy; 2023 MovieTime. All rights reserved.</p>
+    </footer>-->
+</body>
+
+</html>
