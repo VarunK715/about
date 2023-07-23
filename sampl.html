@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enlarge and Close Images</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .enlarge-image {
+            cursor: pointer;
+            max-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlarged-image {
+            max-width: 90%;
+            max-height: 90%;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img class="enlarge-image" src="images/bgc.jpg" alt="Image 1">
+        &nbsp;&nbsp;
+        <img class="enlarge-image" src="images/lap1.jpg" alt="Image 2">
+    </div>
+
+    <div class="overlay">
+        <img class="enlarged-image" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        const enlargeImages = document.querySelectorAll(".enlarge-image");
+        const overlay = document.querySelector(".overlay");
+        const enlargedImage = document.querySelector(".enlarged-image");
+
+        enlargeImages.forEach(image => {
+            image.addEventListener("click", function () {
+                // Set the source of the enlarged image
+                enlargedImage.src = this.src;
+
+                // Show the overlay with the enlarged image
+                overlay.style.display = "flex";
+                enlargedImage.style.display = "block";
+
+                // Prevent the body from scrolling when overlay is shown
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        overlay.addEventListener("click", function () {
+            // Hide the overlay and the enlarged image
+            this.style.display = "none";
+            enlargedImage.style.display = "none";
+
+            // Enable scrolling when the overlay is closed
+            document.body.style.overflow = "auto";
+        });
+
+    </script>
+</body>
+
+</html>

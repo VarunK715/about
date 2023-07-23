@@ -1,7 +1,7 @@
 <!DOCTYPE html lang="en-US">
 
 <head>
-    <title>Contact</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="css_files/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,8 +40,8 @@
             width: 16px;
             height: 16px;
             border-radius: 50px;
-            left:6.5%;
-            top: 73%;
+            left: 6.5%;
+            top: 71%;
             background: #4603ff;
             border: 2px solid #ffffff;
         }
@@ -61,18 +61,18 @@
 
         .edc {
             border-left: 3px solid rgb(255, 255, 255);
-            height: 570px;
+            height: 530px;
             position: absolute;
-            left:7.2%;
+            left: 7.2%;
             margin-left: -3px;
             top: 39.5%;
         }
 
         .wrk {
             border-left: 3px solid rgb(241, 240, 244);
-            height: 300px;
+            height: 965px;
             position: absolute;
-            left: 52.1%;
+            left: 52.2%;
             margin-left: -3px;
             top: 38.5%;
         }
@@ -84,7 +84,7 @@
             height: 16px;
             border-radius: 50px;
             left: 51.5%;
-            top: 36.5%;
+            top: 36.7%;
             background: #4603ff;
             border: 2px solid #ffffff;
         }
@@ -95,23 +95,23 @@
             width: 16px;
             height: 16px;
             border-radius: 50px;
-            left: 51.5%;
-            top: 86.5%;
+            left: 6.5%;
+            top: 123%;
             background: #4603ff;
             border: 2px solid #ffffff;
         }
 
         .int {
             border-left: 3px solid rgb(253, 253, 255);
-            height: 240px;
+            height: 210px;
             position: absolute;
-            left: 52.1%;
+            left: 7.2%;
             margin-left: -3px;
-            top: 89%;
+            top: 125%;
         }
 
 
-        @media (max-width:1000px)  {
+        @media (max-width:1000px) {
             .edu::before {
                 display: none;
             }
@@ -140,6 +140,35 @@
                 display: none;
             }
         }
+
+        .image-container {
+           
+        }
+
+        .enlarge-image {
+            cursor: pointer;
+            max-width: 420px;
+            transition: transform 0.3s ease;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlarged-image {
+            max-width: 90%;
+            max-height: 90%;
+            cursor: pointer;
+            display: none;
+        }
     </style>
 </head>
 
@@ -149,10 +178,10 @@
             <nav>
                 <a href="index.html" class="brand">Varun K</a>
                 <ul class="nav-links">
-                       <li class="act"><a title="Home" href="index.html">Home</a></li>
-                         <li><a title="About" href="about.html">About</a></li>
-                        <li><a title="Resume" href="resume.html">Resume</a></li>
-                     <li><a title="Contact" href="contact.html">Contact</a></li>
+                    <li class="act"><a title="Home" href="index.html">Home</a></li>
+                    <li><a title="About" href="about.html">About</a></li>
+                    <li><a title="Resume" href="resume.html">Resume</a></li>
+                    <li><a title="Contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -175,12 +204,14 @@
                 <h6> <button type="#" class="btn btn-sm btn-light fw-bolder">2017-2020</button></h6>
                 <span><em>Graduated | BE, &nbsp;Computer Science</em></span><br>
                 <ul>
-                    <li class="lh-lg">Programming languages such as Java, Python.</li>
-                    <li class="lh-lg text-justify "> Learned about machine learning algorithms, other applications of
+                    <li class="lh-base" style="margin-bottom:10;">Programming languages such as Java, Python.</li>
+                    <li class="lh-base text-justify " style="margin-bottom:10;"> Learned about machine learning
+                        algorithms, other applications of
                         AI, and the fundamentals
                         of
                         cybersecurity, including network security, cryptography, and ethical hacking.</li>
-                    <li class="lh-lg">Basics of cloud computing and different types of service model & provider</li>
+                    <li class="lh-base" style="margin-bottom:10;">Basics of cloud computing and different types of
+                        service model & provider</li>
                 </ul>
 
 
@@ -188,13 +219,35 @@
                 <h6> <button type="#" class="btn btn-sm btn-light fw-bolder">2014-2017</button></h6>
                 <span><em>Computer Science</em></span><br>
                 <ul>
-                    <li class="lh-lg">Programming languages such as Java,C,C++.</li>
-                    <li class="lh-lg text-justify ">Database management systems, including the design of database
+                    <li class="lh-base" style="margin-bottom:10;">Programming languages such as Java,C,C++.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Database management systems, including the design of
+                        database
                         systems, data models, query
                         languages, and data normalization.</li>
-                    <li class="lh-lg">Networking including network architectures, protocols, and network security.</li>
-                    <li class="lh-lg">Web development technologies including HTML, CSS, JavaScript and database
+                    <li class="lh-base" style="margin-bottom:10;">Networking including network architectures, protocols,
+                        and network security.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Web development technologies including HTML, CSS,
+                        JavaScript and database
                         connection.</li>
+                </ul>
+                <br>&nbsp;
+                <div class="int"> </div>
+                <h5 class="intr" style="color:rgb(209, 255, 4);">Internship</h5>
+                <h6 class="int1" style="color:rgb(4, 255, 84);">FullStack Development | <button type="#"
+                        class="btn btn-sm btn-light fw-bolder">June 2019 - July 2019</button></h6>
+                <ul>
+                    <li class="lh-base" style="margin-bottom:10;">Learned how to work with various web technologies,
+                        including HTML, CSS,
+                        JavaScript, and web
+                        frameworks like Bootstrap, Angular. </li>
+                    <li class="lh-base" style="margin-bottom:10;">how to build and manage databases using SQL and NoSQL
+                        database systems, and how to
+                        work with
+                        server-side programming languages like Python.</li>
+                    <li class="lh-base" style="margin-bottom:10;"> learned how to write clean, maintainable code, and
+                        how to use version control
+                        tools like Git to
+                        manage code changes.</li>
                 </ul>
             </div>
 
@@ -207,43 +260,113 @@
                 </h6>
 
                 <ul>
-                    <li class="lh-lg">Working in SAP CPQ Functionality to solve user's queries, tickets with Incident
-                        Management and
-                        creation of cloud quotes.</li>
-                    <li class="lh-lg">Possess commanding language of programming language such as Python and
-                        construction of CTX tags
-                        and use of developer console tools.</li>
-                    <li class="lh-lg">CPQ functionalities using Global scripts, custom tables, Triggers, Quote
-                        calculations, etc</li>
-                    <li class="lh-lg">Have Monitoring experience of jobs running on Talend Jobs platform and on cloud
-                        services, also
-                        running SQL queries to analyse data movement from end-to-end system.</li>
+                    <h6 class="wrk1" style="color:rgb(4, 255, 84);"><button type="#"
+                            class="btn btn-sm btn-success fw-bolder">Support Executive</button></h6>
+                    <li class="lh-base" style="margin-bottom:10;">Working in SAP CPQ functionality and work includes
+                        Creating and managing quotes
+                        within SAP CPQ, selecting products and services, and generating accurate and
+                        professional-looking quotes</li>
+                    <li class="lh-base" style="margin-bottom:10;">Communicating effectively with end-users to understand
+                        their requirements, provide
+                        updates, and manage expectations regarding issues</li>
+                    <li class="lh-base" style="margin-bottom:10;">Participating in regular team meetings, discussions,
+                        and training sessions to stay
+                        informed about system updates, changes, and upcoming releases.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Utilizing knowledge base articles, documentation, and
+                        internal resources to
+                        identify potential solutions.</li>
+                    <li>Utilizing knowledge base articles, documentation, and internal resources to identify potential
+                        solutions.</li>
                 </ul>
 
-                <div class="int"> </div>
-                <h5 class="intr" style="color:rgb(209, 255, 4);">Internship</h5>
-                <h6 class="int1" style="color:rgb(4, 255, 84);">FullStack Development | <button type="#"
-                        class="btn btn-sm btn-light fw-bolder">June 2019 - July 2019</button></h6>
                 <ul>
-                    <li class="lh-lg">Learned how to work with various web technologies, including HTML, CSS,
-                        JavaScript, and web
-                        frameworks like Bootstrap, Angular. </li>
-                    <li class="lh-lg">how to build and manage databases using SQL and NoSQL database systems, and how to
-                        work with
-                        server-side programming languages like Python.</li>
-                    <li class="lh-lg"> learned how to write clean, maintainable code, and how to use version control
-                        tools like Git to
-                        manage code changes.</li>
+                    <h6 class="wrk1" style="color:rgb(4, 255, 84);"><button type="#"
+                            class="btn btn-sm btn-success fw-bolder">Data Engineer</button></h6>
+                    <li class="lh-base" style="margin-bottom:10;">Demonstrated ability to write SQL queries to extract,
+                        manipulate, and analyse data
+                        for reporting and decision-making purposes, including creating and maintaining database schemas,
+                        tables, and relationships.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Successfully utilized SSMS for database development
+                        tasks, including creating and
+                        modifying database objects such as tables and views, as well as running SQL queries.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Developed basic reports and dashboards in Power BI and
+                        have hands-on experience
+                        working with Azure Data Factory to create and maintain ETL pipelines. This includes designing
+                        and configuring pipelines, activities, and data flows within Azure Data Factory to orchestrate
+                        the movement and transformation of data. Additionally, I am proficient in connecting Azure SQL
+                        Database with SQL Server Management Studio (SSMS) to efficiently manage and query the database.
+                    </li>
+                    <li class="lh-base" style="margin-bottom:10;">Have experience maintaining and monitoring Azure data
+                        pipelines and Talend jobs,
+                        as well as identifying and resolving errors in case the pipelines or jobs encounter issues and
+                        do not run properly.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Have a working knowledge of HQL (Hive Query Language)
+                        and HDFS (Hadoop Distributed
+                        File System). This includes understanding the syntax and usage of HQL for querying data stored
+                        in Hive tables. Additionally, I am familiar with HDFS, which is a distributed file system used
+                        for storing and processing large datasets across a Hadoop cluster.</li>
+
                 </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5 text-white bg-dark " style="opacity: 0.8;">
+        <div class="container mt-3 pt-3 shadow-lg  bg-dark rounded border-dark text-white">
+            <h2 class=" fst-italic fw-bolder" style="padding: 5px;">Projects</h2>
+        </div>
+        <div class="row p-3">
+
+            <div class="col-lg-8 p-2 shadow-lg  bg-dark rounded border-dark mrgn">
+                <h6 class="int1" style="color:rgb(4, 255, 84);">Company Sales Data Analysis | </h6>
+                <ul>
+                    <li class="lh-base" style="margin-bottom:10;"> Employed SQL, MySQL Workbench, and Power BI to
+                        perform
+                        comprehensive analysis of company sales data, extracting and transforming raw data into
+                        structured
+                        format using SQL queries and MySQL Workbench. </li>
+                    <li class="lh-base" style="margin-bottom:10;">Utilized advanced data cleaning techniques in Power
+                        BI,
+                        including handling missing values, outliers, and inconsistencies, while creating calculated
+                        columns
+                        with DAX for thorough analysis and segmentation.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Developed measures and utilized Power BI's interactive
+                        features to design visually appealing and user-friendly sales data dashboards.</li>
+                </ul>
+
+                <h6 class="int1" style="color:rgb(4, 255, 84);"> Hospitality Report Data Analysis | </h6>
+                <ul>
+                    <li class="lh-base" style="margin-bottom:10;"> Loaded data from CSV files into Power BI, leveraging
+                        Power Query for data transformation and cleansing prior to analysis.</li>
+                    <li class="lh-base" style="margin-bottom:10;">Developed key metrics calculations, such as occupancy
+                        rates, revenue per available room (RevPAR), and average length of stay, using DAX.</li>
+                    <li class="lh-base" style="margin-bottom:10;"> Created dynamic visualizations and interactive
+                        dashboards
+                        in Power BI, enabling stakeholders to explore and filter data across dimensions like location,
+                        room
+                        type, and booking channel.</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 p-2 shadow-lg  bg-dark rounded border-dark">
+                <div class="image-container">
+                    <img class="enlarge-image" src="images/sales report.png" alt="Image 1">
+                    &nbsp;
+                    <img class="enlarge-image" src="images/hospitality_report.png" alt="Image 2">
+                </div>
+
+                <div class="overlay">
+                    <img class="enlarged-image" src="" alt="Enlarged Image">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container mt-5 ">
-        <h1></h1>
+    <div class="container mt-5">
     </div>
-    <!--Footer 
-    <footer>
+    <!--<footer>
         <div class="social-icons">
             <a href="https://twitter.com/Bull275?t=u047IZ46fMzMB17JLCnyzA&s=08"><i class="fab fa-twitter"
                     style="color:rgb(19, 129, 232);"></i></a>
@@ -254,6 +377,36 @@
         </div>
         <p>&copy; 2023 MovieTime. All rights reserved.</p>
     </footer>-->
+
+    <script>
+        const enlargeImages = document.querySelectorAll(".enlarge-image");
+        const overlay = document.querySelector(".overlay");
+        const enlargedImage = document.querySelector(".enlarged-image");
+
+        enlargeImages.forEach(image => {
+            image.addEventListener("click", function () {
+                // Set the source of the enlarged image
+                enlargedImage.src = this.src;
+
+                // Show the overlay with the enlarged image
+                overlay.style.display = "flex";
+                enlargedImage.style.display = "block";
+
+                // Prevent the body from scrolling when overlay is shown
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        overlay.addEventListener("click", function () {
+            // Hide the overlay and the enlarged image
+            this.style.display = "none";
+            enlargedImage.style.display = "none";
+
+            // Enable scrolling when the overlay is closed
+            document.body.style.overflow = "auto";
+        });
+
+    </script>
 </body>
 
 </html>

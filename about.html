@@ -58,8 +58,25 @@
 
         @media (max-width: 1000px) {
             .intre {
-                width:100%;
+                width: 100%;
             }
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding:8px 16px;
+            margin-right:15px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .expert {
+            background-color: #007BFF;
         }
     </style>
 </head>
@@ -70,10 +87,10 @@
             <nav>
                 <a href="index.html" class="brand">Varun K</a>
                 <ul class="nav-links">
-                   <li class="act"><a title="Home" href="index.html">Home</a></li>
-                   <li><a title="About" href="about.html">About</a></li>
-                   <li><a title="Resume" href="resume.html">Resume</a></li>
-                   <li><a title="Contact" href="contact.html">Contact</a></li>
+                    <li class="act"><a title="Home" href="index.html">Home</a></li>
+                    <li><a title="About" href="about.html">About</a></li>
+                    <li><a title="Resume" href="resume.html">Resume</a></li>
+                    <li><a title="Contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -124,23 +141,36 @@
         <div class="container mt-5  p-2  text-white">
             <h5 class="skil">SKILLS</h5>
         </div>
-        <div class="container shadow-lg m-1 bg-dark rounded">
+       <!-- <div class="container shadow-lg m-1 bg-dark rounded"></div>-->
             <div class="row ">
                 <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
-                    <span class="">IT Support</span>
-                    <div class="progress my-3">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:100%">100%</div>
+                    <div class="skill">
+                        <span class="skill-tag expert" style="background-color:lightsalmon;">HTML</span>
+                        <span class="skill-tag expert" style="background-color:salmon;">CSS</span>
+                        <span class="skill-tag expert" style="background-color:darksalmon;">SQL</span>
+                        <span class="skill-tag expert" style="background-color:lightcoral;">Python</span>
+                        <span class="skill-tag expert" style="background-color:indianred;">Ticketing</span>
                     </div>
-                    <span class="">Python/SQL</span>
-                    <div class="progress my-3">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:75%">75%</div>
+                    <div class="skill">
+                        <span class="skill-tag expert" style="background-color:cadetblue;">Git</span>
+                        <span class="skill-tag expert" style="background-color:tan;">MS Excel</span>
+                        <span class="skill-tag expert" style="background-color:sandybrown;">MS Word</span>
+                        <span class="skill-tag expert" style="background-color:burlywood;" >Power BI</span>
                     </div>
-                    <span class="">Cloud Computing/Git</span>
-                    <div class="progress my-3">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:50%">50%</div>
+                    <div class="skill">
+                        <span class="skill-tag expert" style="background-color:dodgerblue;">Apache Hadoop</span>
+                        <span class="skill-tag expert" style="background-color:deepskyblue;">Apache Hive</span>
+                        <span class="skill-tag expert" style="background-color:cornflowerblue;">Apache Spark</span>
+                        
+                    </div>
+                    <div class="skill">
+                        <span class="skill-tag expert" style="background-color:plum;">ETL</span>
+                        <span class="skill-tag expert" style="background-color:violet;">Azure Data Factory</span>                 
+                        <span class="skill-tag expert" style="background-color:orchid;">Cloud : Azure</span>
+                        <span class="skill-tag expert" style="background-color:mediumorchid;">IT Support</span>
                     </div>
                 </div>
-                <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
+               <!-- <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
                     <span class="">Front-End Development</span>
                     <div class="progress my-3 ">
                         <div class="progress-bar bg-success progress-bar-striped" style="width:60%">60%</div>
@@ -153,9 +183,9 @@
                     <div class="progress my-3">
                         <div class="progress-bar bg-success progress-bar-striped" style="width:70%">70%</div>
                     </div>
-                </div>
+                </div>-->
             </div>
-        </div>
+        
 
 
         <!--intrests-->

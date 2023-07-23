@@ -52,11 +52,11 @@ nav {
 
 body {
   font-family: "Times New Roman", Times, serif;
-  background-image:url("../images/bgc.jpg");
+  background-image: url("../images/bgc.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  color: #ffffff;
+  color: #cccccc;
 }
 
 /* Style the header and navigation bar */
@@ -71,7 +71,7 @@ header {
 footer {
   /*background-color: #333;*/
   color: #fff;
-  padding:15px;
+  padding: 15px;
 }
 
 .social-icons {
