@@ -68,8 +68,8 @@
 
         .skill-tag {
             display: inline-block;
-            padding:8px 16px;
-            margin-right:15px;
+            padding: 8px 16px;
+            margin-right: 15px;
             border-radius: 5px;
             color: #fff;
             font-weight: bold;
@@ -77,6 +77,24 @@
 
         .expert {
             background-color: #007BFF;
+        }
+
+        .certi {
+            position: absolute;
+            /* Use absolute positioning to place the div */
+            top:89%;
+            /* Position the top edge of the div 100 pixels from the top of the page */
+            left:50%;
+        }
+        .certi::after {
+            content: "";
+            width: 120px;
+            height: 1px;
+            display: inline-block;
+            background: #4ceb95;
+            position: absolute;
+            top:65%;
+            left:13%;
         }
     </style>
 </head>
@@ -141,51 +159,55 @@
         <div class="container mt-5  p-2  text-white">
             <h5 class="skil">SKILLS</h5>
         </div>
-       <!-- <div class="container shadow-lg m-1 bg-dark rounded"></div>-->
-            <div class="row ">
-                <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
-                    <div class="skill">
-                        <span class="skill-tag expert" style="background-color:lightsalmon;">HTML</span>
-                        <span class="skill-tag expert" style="background-color:salmon;">CSS</span>
-                        <span class="skill-tag expert" style="background-color:darksalmon;">SQL</span>
-                        <span class="skill-tag expert" style="background-color:lightcoral;">Python</span>
-                        <span class="skill-tag expert" style="background-color:indianred;">Ticketing</span>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-tag expert" style="background-color:cadetblue;">Git</span>
-                        <span class="skill-tag expert" style="background-color:tan;">MS Excel</span>
-                        <span class="skill-tag expert" style="background-color:sandybrown;">MS Word</span>
-                        <span class="skill-tag expert" style="background-color:burlywood;" >Power BI</span>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-tag expert" style="background-color:dodgerblue;">Apache Hadoop</span>
-                        <span class="skill-tag expert" style="background-color:deepskyblue;">Apache Hive</span>
-                        <span class="skill-tag expert" style="background-color:cornflowerblue;">Apache Spark</span>
-                        
-                    </div>
-                    <div class="skill">
-                        <span class="skill-tag expert" style="background-color:plum;">ETL</span>
-                        <span class="skill-tag expert" style="background-color:violet;">Azure Data Factory</span>                 
-                        <span class="skill-tag expert" style="background-color:orchid;">Cloud : Azure</span>
-                        <span class="skill-tag expert" style="background-color:mediumorchid;">IT Support</span>
-                    </div>
+       
+        <!-- <div class="container shadow-lg m-1 bg-dark rounded"></div>-->
+        <div class="row ">
+            <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
+                <div class="skill">
+                    <span class="skill-tag expert" style="background-color:lightsalmon;">HTML</span>
+                    <span class="skill-tag expert" style="background-color:salmon;">CSS</span>
+                    <span class="skill-tag expert" style="background-color:darksalmon;">SQL</span>
+                    <span class="skill-tag expert" style="background-color:lightcoral;">Python</span>
+                    <span class="skill-tag expert" style="background-color:indianred;">Ticketing</span>
                 </div>
-               <!-- <div class="col-lg-6 p-3 shadow-lg  bg-dark rounded border-dark">
-                    <span class="">Front-End Development</span>
-                    <div class="progress my-3 ">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:60%">60%</div>
-                    </div>
-                    <span class="">MS OFFICE(Excel/Word/PowerPoint)</span>
-                    <div class="progress  my-3">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:85%">85%</div>
-                    </div>
-                    <span class="">Networking/CCNA</span>
-                    <div class="progress my-3">
-                        <div class="progress-bar bg-success progress-bar-striped" style="width:70%">70%</div>
-                    </div>
-                </div>-->
+                <div class="skill">
+                    <span class="skill-tag expert" style="background-color:cadetblue;">Git</span>
+                    <span class="skill-tag expert" style="background-color:tan;">MS Excel</span>
+                    <span class="skill-tag expert" style="background-color:sandybrown;">MS Word</span>
+                    <span class="skill-tag expert" style="background-color:burlywood;">Power BI</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-tag expert" style="background-color:dodgerblue;">Apache Hadoop</span>
+                    <span class="skill-tag expert" style="background-color:deepskyblue;">Apache Hive</span>
+                    <span class="skill-tag expert" style="background-color:cornflowerblue;">Apache Spark</span>
+
+                </div>
+                <div class="skill">
+                    <span class="skill-tag expert" style="background-color:plum;">ETL</span>
+                    <span class="skill-tag expert" style="background-color:violet;">Azure Data Factory</span>
+                    <span class="skill-tag expert" style="background-color:orchid;">Cloud : Azure</span>
+                    <span class="skill-tag expert" style="background-color:mediumorchid;">IT Support</span>
+                </div>
             </div>
-        
+            <div class="col-lg-6 shadow-lg pt-3 bg-dark rounded border-dark">
+                <div class="container certi text-white">
+                    <h5 class="ski">CERTIFICATIONS</h5>
+                </div>
+                <div class="skill p-2">
+                    <span class="skill-tag expert" style="background-color:dodgerblue;">Microsoft Certified : Azure
+                        Fundamentals (AZ-900)</span>
+                </div>
+                <div class="skill p-2">
+                    <span class="skill-tag expert" style="background-color:cornflowerblue;">Microsoft Certified : Azure
+                        Data Fundamentals (DP-900)</span>
+                </div>
+                <div class="skill p-2">
+                    <span class="skill-tag expert" style="background-color:deepskyblue;">Cisco Certified Network
+                        Associate (CCNA)</span>
+                </div>
+            </div>
+        </div>
+
 
 
         <!--intrests-->
